@@ -2,6 +2,9 @@
 <html>
 <head>
   <style>
+    #About_me{
+      max-width: 500px;
+    }
       /* Style the tab */
     div.tab {
         overflow: hidden;
@@ -41,14 +44,19 @@
 </head>
 <body>
  <div class="tab">
-  <button class="tablinks" onclick="openTab(event, 'About me')" id="default_open">About me</button>
+  <button class="tablinks" onclick="openTab(event, 'About_me')" id="default_open">About me</button>
   <button class="tablinks" onclick="openTab(event, 'Interests')">Interests</button>
-  <button class="tablinks" onclick="openTab(event, 'Contact Information')">Contact Information</button>
+  <button class="tablinks" onclick="openTab(event, 'Contact_Information')">Contact Information</button>
 </div>
 
-<div id="About me" class="tabcontent">
-  <h3>London</h3>
-  <p>London is the capital city of England.</p>
+<div id="About_me" class="tabcontent">
+  <h3>Yash Ranjan</h3>
+  <img src="profile.jpg" alt="My photo" style="width:128px;height:128px;">
+  <p width="50px">
+  Yash is a male person of Indian descent who was born on September 7, 1997. He has lived in Irvine, California for the majority of his life so far.
+  As of right now, he is currently living in La Jolla California and is a student at UCSD majoring in Computer Engineering. Some day he hopes to graduate
+  college and become a productive member in the software industry.
+  </p>
 </div>
 
 <div id="Interests" class="tabcontent">
@@ -56,7 +64,7 @@
   <p>Paris is the capital of France.</p>
 </div>
 
-<div id="Contact Information" class="tabcontent">
+<div id="Contact_Information" class="tabcontent">
   <h3>Tokyo</h3>
   <p>Tokyo is the capital of Japan.</p>
 </div>
