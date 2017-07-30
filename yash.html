@@ -27,6 +27,55 @@
       max-width: 500px;
     }
 
+    #Contact_Title{
+      font-size: 250%;
+    }
+
+    #cell{
+      position: absolute;
+      top: 220px;
+      left: 116px;
+      max-width: 500px;
+      font-size: 100%
+    }
+
+    #email{
+      position: absolute;
+      top: 520px;
+      left: 116px;
+      max-width: 500px;
+      font-size: 100%
+    }
+
+
+    #linkedin{
+      position: absolute;
+      top: 220px;
+      right: 300px;
+      max-width: 500px;
+      font-size: 100%
+    }
+
+    #facebook{
+      position: absolute;
+      left: 0;
+      top: 40%;
+      width: 95%;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    #skype{
+      position: absolute;
+      top: 520px;
+      right: 550px;
+      max-width: 500px;
+      font-size: 100%
+    }
+
+
+
+
       /* Style the tab */
     div.tab {
         overflow: hidden;
@@ -73,7 +122,7 @@
 
 <div id="About_me" class="tabcontent">
   <div id="a_me_title" align="center">
-    <p > About me </p>
+    <h3> About me </h3>
   </div>
 
   <div id = "yash">
@@ -113,8 +162,51 @@
 </div>
 
 <div id="Contact_Information" class="tabcontent">
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
+  <div id="Contact_Title" align="center">
+    <h3> Contact Information </h3>
+  </div>
+  <div id = "cell">
+    <h3>Cell Phone Number</h3>
+    <img src="cellphone.jpg" alt="Cell photo" style="width:128px;height:128px;">
+    <p>
+      My phone number is: 949-419-7017. I try to pick up my phone whenever I can, but if I don't pick up I respond to text better.
+    </p>
+  </div>
+
+  <div id = "email">
+    <h3>Email</h3>
+    <img src="email.jpg" alt="Email photo" style="width:128px;height:128px;">
+    <p>
+      My primary school email is: yranjan@ucsd.edu. (most responsive) <br>
+      My secondary email address is: yash.ranjan@yahoo.com. (middle)<br>
+      My third email address is: yash.ranjan123@gmail.com (least responsive)
+    </p>
+  </div>
+
+  <div id = "linkedin">
+    <h3>Linkedin</h3>
+    <img src="linkedin.png" alt="Linkedin photo" style="width:200px;height:128px;">
+    <p>
+      My Linkedin website link is: https://www.linkedin.com/in/yashranjan/
+    </p>
+  </div>
+
+  <div id = "skype">
+    <h3>Skype</h3>
+    <img src="skype.png" alt="Skype photo" style="width:128px;height:128px;">
+    <p>
+      My Skype id is: yash.ranjan2
+    </p>
+  </div>
+
+  <div id = "facebook">
+    <h3>Facebook</h3>
+    <img src="facebook.png" alt="Facebook photo" style="width:128px;height:128px;">
+    <p>
+      My Facebook link is: <br> https://www.facebook.com/yash.ranjan.395
+    </p>
+  </div>
+</div>
 </div>
 <script>
 document.getElementById("default_open").click();
