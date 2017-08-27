@@ -81,6 +81,24 @@
       font-size: 100%
     }
 
+    #Interest_title{
+      font-size: 250%;
+    }
+
+    #bicycle{
+      position: absolute;
+      top:15vw;
+      left: 5vw;
+      font-size: 150%;
+    }
+    #bicycle_content{
+      position: absolute;
+      right: 20vw;
+      top: 20vw;
+      max-width: 30vw;
+      font-size: 150%;
+    }
+
 
 
 
@@ -121,14 +139,14 @@
     }
   </style>
 </head>
-<body>
+<body >
  <div class="tab">
   <button class="tablinks" onclick="openTab(event, 'About_me')" id="default_open">About me</button>
   <button class="tablinks" onclick="openTab(event, 'Interests')">Interests</button>
   <button class="tablinks" onclick="openTab(event, 'Contact_Information')">Contact Information</button>
 </div>
 
-<div id="About_me" class="tabcontent">
+<div id="About_me" class="tabcontent" >
   <div id="a_me_title" align="center">
     <h3> About me </h3>
   </div>
@@ -165,8 +183,18 @@
 </div>
 
 <div id="Interests" class="tabcontent">
-  <h3>Paris</h3>
-  <p>Paris is the capital of France.</p>
+  <div id="Interest_title" align="center">
+    <h3> Interests </h3>
+  </div>
+  <div id = "bicycle">
+    <h3>Bicycles</h3>
+    <img src="bicycle_website.jpg" alt="Bicycle photo" style="width:30vw;height:20vw;">
+  </div>
+  <div id ="bicycle_content">
+    <p>Taking a ride on a bicycle has been one of my favorite pastimes. I usally bike on city streets or near the mountain trails near my house. I haven't
+        been able to go on a bike ride for a while since my bicycle was stolen at college. In the next few weeks I plan on purchasing a hybrid bicycle
+        for commuting and riding on mountain trails.</p>
+  </div>
 </div>
 
 <div id="Contact_Information" class="tabcontent">
@@ -178,7 +206,7 @@
     <h3>Cell Phone Number</h3>
     <img src="cellphone.jpg" alt="Cell photo" style="width:10vw;height:10vw;">
     <p>
-      My phone number is: 949-419-7017. I try to pick up my phone whenever I can, but if I don't pick up I respond to text better.
+      My phone number is: 949-419-7017. I try to pick up my phone whenever I can, but usually I respond to text better.
     </p>
   </div>
 
