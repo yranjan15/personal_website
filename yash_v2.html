@@ -7,40 +7,40 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+    #a_me_title{
+       font-size: 250%;
+    }
+    #yash{
+      position: absolute;
+      top: 15vw;
+      left: 10vw;
+      max-width: 20vw;
+      font-size: 100%
+    }
+
+    #education{
+      position: absolute;
+      top: 15vw;
+      left: 40vw;
+      max-width: 20vw;
+    }
+
+    #location{
+      position: absolute;
+      top: 15vw;
+      right: 10vw;
+      max-width: 20vw;
+    }
+  </style>
 </head>
 <body>
 
 <div class="container-fluid">
-  <div class="row">
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-  <div class="col-md-1">.col-md-1</div>
-</div>
-<div class="row">
-  <div class="col-md-8">.col-md-8</div>
-  <div class="col-md-4">.col-md-4</div>
-</div>
-<div class="row">
-  <div class="col-md-4">.col-md-4</div>
-  <div class="col-md-4">.col-md-4</div>
-  <div class="col-md-4">.col-md-4</div>
-</div>
-<div class="row">
-  <div class="col-md-6">.col-md-6</div>
-  <div class="col-md-6">.col-md-6</div>
-</div>
   <h2>Dynamic Pills</h2>
   <p>To make the tabs toggleable, add the data-toggle="pill" attribute to each link. Then add a .tab-pane class with a unique ID for every tab and wrap them inside a div element with class .tab-content.</p>
-  <ul class="nav nav-pills">
+  <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
     <li><a data-toggle="pill" href="#menu1">About</a></li>
     <li><a data-toggle="pill" href="#menu2">Contact Information</a></li>
@@ -48,10 +48,42 @@
   </ul>
 
 
-  <div class="tab-content">
+<div class="tab-content">
     <div id="home" class="tab-pane fade in active">
-      <h3>HOME</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <div id="a_me_title" align="center" class = "row">
+        <h3> About me </h3>
+      </div>
+      <div class="row">
+        <div id = "yash" class="col">
+          <h3>Yash Ranjan</h3>
+          <img src="profile.jpg" alt="My photo" style="width:10vw;height:10vw;">
+          <p>
+            Yash is a young man of Indian descent who was born on September 7, 1997. He has lived in Irvine, California for the majority of his life so far.
+            As of right now, he is currently living in La Jolla California and is a student at UCSD majoring in Computer Engineering. Some day he hopes to graduate
+            college and become a productive member in the software industry.
+          </p>
+        </div>
+
+        <div id = "education" class="col">
+          <h3>Relevant Education Background</h3>
+          <img src="UCSDAerialView.jpg" alt="School photo" style="width:20vw;height:10vw;">
+          <p>
+          Yash started high school at University High in Irvine, California. Besides taking prerequisite math, science, and english classes, Yash spent some time
+          pursuing his educational interests by taking AP computer science and AP physics. These courses instilled a passion for physics and computer science
+          within him. These passions ultimately led him to pursue a degree in computer engineering at UCSD, where he is currently studying.
+          </p>
+        </div>
+
+        <div id = "location" class="col">
+          <h3> Location Background </h3>
+          <img src="Newport-Beach.jpg" alt = "Beach photo" style="width:20vw; height:10vw;">
+          <p>
+          Yash was born at Hoag Hospital in Newport Beach California on September 7, 1997. From that point on he has lived in Irvine, California. For the first two years
+          of his life he lived in an apartment before moving into his first house in the West Irvine complex. In 2004 he moved into the Quail Hill residential community in
+          Irvine. As of right now he resides in an apartment in San Diego California and commutes to Irvine during the weekends.
+          </p>
+        </div>
+      </div>
     </div>
     <div id="menu1" class="tab-pane fade">
       <h3>Menu 1</h3>
@@ -65,7 +97,6 @@
       <h3>Menu 3</h3>
       <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
     </div>
-  </div>
 </div>
 
 </body>
