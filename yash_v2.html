@@ -27,6 +27,44 @@
       margin-top: 5%;
       font-size: 100%;
     }
+
+    #Interest_title{
+      font-size: 250%;
+    }
+
+    #bicycle{
+      font-size: 150%;
+    }
+    #bicycle_content{
+      margin-top: 5%;
+      font-size: 150%;
+    }
+
+    #tennis{
+      font-size: 150%;
+    }
+    #tennis_content{
+      margin-top: 5%;
+      font-size: 150%;
+    }
+
+    #puzzles{
+      font-size: 150%;
+    }
+
+    #puzzle_content{
+      margin-top: 5%;
+      font-size: 150%;
+    }
+
+    #car{
+      font-size: 150%;
+    }
+
+    #car_content{
+      margin-top: 5%;
+      font-size: 150%;
+    }
   </style>
 </head>
 <body>
@@ -36,9 +74,8 @@
   <p>To make the tabs toggleable, add the data-toggle="pill" attribute to each link. Then add a .tab-pane class with a unique ID for every tab and wrap them inside a div element with class .tab-content.</p>
   <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
-    <li><a data-toggle="pill" href="#menu1">About</a></li>
+    <li><a data-toggle="pill" href="#Interests">Interests</a></li>
     <li><a data-toggle="pill" href="#menu2">Contact Information</a></li>
-    <li><a data-toggle="pill" href="#menu3">Interests</a></li>
   </ul>
 
 
@@ -48,7 +85,7 @@
         <h3> About me </h3>
       </div>
       <div class="row">
-        <div id = "yash" class="col-sm-4">
+        <div id = "yash" class="col-sm-4 bg-primary">
           <h3>Yash Ranjan</h3>
           <img src="profile.jpg" alt="My photo" style="width:10vw;height:10vw;">
           <p>
@@ -58,7 +95,7 @@
           </p>
         </div>
 
-        <div id = "education" class="col-sm-4">
+        <div id = "education" class="col-sm-4 bg-danger">
           <h3>Relevant Education Background</h3>
           <img src="UCSDAerialView.jpg" alt="School photo" style="width:20vw;height:10vw;">
           <p>
@@ -68,7 +105,7 @@
           </p>
         </div>
 
-        <div id = "location" class="col-sm-4">
+        <div id = "location" class="col-sm-4 bg-warning">
           <h3> Location Background </h3>
           <img src="Newport-Beach.jpg" alt = "Beach photo" style="width:20vw; height:10vw;">
           <p>
@@ -79,9 +116,54 @@
         </div>
       </div>
     </div>
-    <div id="menu1" class="tab-pane fade">
-      <h3>Menu 1</h3>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div id="Interests" class="tab-pane fade">
+      <div id="Interest_title" align="center" class="row">
+        <h3> Interests </h3>
+      </div>
+      <div class="row">
+        <div id = "bicycle" class="col-sm-6">
+          <h3>Bicycles</h3>
+          <img src="bicycle_website.jpg" alt="Bicycle photo" style="width:30vw;height:20vw;">
+        </div>
+        <div id ="bicycle_content" class="col-sm-6">
+          <p>Taking a ride on a bicycle has been one of my favorite pastimes. I usally bike on city streets or near the mountain trails near my house. I haven't
+              been able to go on a bike ride for a while since my bicycle was stolen at college. In the next few weeks I plan on purchasing a hybrid bicycle
+              for commuting and riding on mountain trails.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div id = "tennis" class="col-sm-6">
+          <h3>Tennis</h3>
+          <img src="tennis rackets.jpg" alt="tennis photo" style="width:35vw;height:20vw;">
+        </div>
+        <div id ="tennis_content" class="col-sm-6">
+          <p>I have been taking tennis clases intermittently since I was a child and as a teenager as well. I try to watch professional games on tv whenever I can.
+             However, I mostly enjoy tennis as a recreational activity. Lately I have been trying to practice my ground strokes and serves on a weekly basis. With these
+             skills, I hope to improve the development of my tennis game. </p>
+        </div>
+      </div>
+      <div class="row">
+        <div id = "puzzles" class="col-sm-6">
+          <h3>Puzzles</h3>
+          <img src="puzzles.jpg" alt="puzzle photo" style="width:30vw;height:20vw;">
+        </div>
+        <div id ="puzzle_content" class="col-sm-6">
+          <p>In my spare time, I enjoy making puzzles that contain 100s - 1000s of pieces. I feel as if solving a puzzle is a good way to clear your mind from the stress
+             of all the current activities in my life. I will usually make a puzzle right after finishing all my finals at the end of the quarter. Though puzzles take
+             a long time to solve, I feel very satisfied when the final image is constructed. </p>
+        </div>
+      </div>
+      <div class="row">
+        <div id = "car" class="col-sm-6">
+          <h3>Cars</h3>
+          <img src="car.jpg" alt="car photo" style="width:30vw;height:20vw;">
+        </div>
+        <div id ="car_content" class="col-sm-6">
+          <p>Ever since I was a child, I have always enjoyed researching and learning more about cars. In fact, I actaully took an autoshop course in high school so
+              I could learn more about car maintenance. My current automotive interests are in fully electric or hybrid electric vehicles as well as autonomous driving.
+              As of right now, my favorite car is the porsche 918 spyder which is pictured on the left.</p>
+        </div>
+      </div>
     </div>
     <div id="menu2" class="tab-pane fade">
       <h3>Menu 2</h3>
