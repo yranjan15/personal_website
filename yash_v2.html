@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Yash Ranjan Website</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
   <style>
     #a_me_title{
        font-size: 250%;
@@ -65,37 +65,60 @@
       margin-top: 5%;
       font-size: 150%;
     }
+
+    #cell{
+      margin-top: 3%;
+    }
+
+    #email{
+      margin-top: 3%
+    }
+
+
+    #linkedin{
+      margin-top: 3%
+    }
+    .nav>li> a{
+      color:white;
+    }
+
+    .underline{
+      text-decoration: underline;
+    }
   </style>
 </head>
-<body>
+<body class="bg-primary text-white">
 
 <div class="container-fluid">
-  <h2>Dynamic Pills</h2>
-  <p>To make the tabs toggleable, add the data-toggle="pill" attribute to each link. Then add a .tab-pane class with a unique ID for every tab and wrap them inside a div element with class .tab-content.</p>
-  <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
-    <li><a data-toggle="pill" href="#Interests">Interests</a></li>
-    <li><a data-toggle="pill" href="#menu2">Contact Information</a></li>
+  <div class="row justify-content-center">
+    <h2>Yash Ranjan Website</h2>
+  </div>
+
+  <ul class="nav nav-tabs text-white">
+    <li class="nav-item"><a class="nav-link active" data-toggle="pill" href="#home">About Me</a></li>
+    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#Interests">Interests</a></li>
+    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#Contact">Contact Information</a></li>
+    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#Experience">Professional Experience</a></li>
   </ul>
 
 
 <div class="tab-content">
-    <div id="home" class="tab-pane fade in active">
-      <div id="a_me_title" align="center" class = "row">
+    <div id="home" class="tab-pane fade show active">
+      <div id="a_me_title" class = "row justify-content-center">
         <h3> About me </h3>
       </div>
       <div class="row">
-        <div id = "yash" class="col-sm-4 bg-primary">
+        <div id = "yash" class="col-sm-4 bg-warning text-dark">
           <h3>Yash Ranjan</h3>
           <img src="profile.jpg" alt="My photo" style="width:10vw;height:10vw;">
-          <p>
+          <p class="text-dark">
             Yash is a young man of Indian descent who was born on September 7, 1997. He has lived in Irvine, California for the majority of his life so far.
             As of right now, he is currently living in La Jolla California and is a student at UCSD majoring in Computer Engineering. Some day he hopes to graduate
-            college and become a productive member in the software industry.
+            college and become a productive member in the software industry.<br/><br/>
           </p>
         </div>
 
-        <div id = "education" class="col-sm-4 bg-danger">
+        <div id = "education" class="col-sm-4 bg-danger text-dark">
           <h3>Relevant Education Background</h3>
           <img src="UCSDAerialView.jpg" alt="School photo" style="width:20vw;height:10vw;">
           <p>
@@ -105,10 +128,10 @@
           </p>
         </div>
 
-        <div id = "location" class="col-sm-4 bg-warning">
-          <h3> Location Background </h3>
+        <div id = "location" class="col-sm-4 bg-success text-dark" >
+          <h3 class="text-dark"> Location Background </h3>
           <img src="Newport-Beach.jpg" alt = "Beach photo" style="width:20vw; height:10vw;">
-          <p>
+          <p class="text-dark">
           Yash was born at Hoag Hospital in Newport Beach California on September 7, 1997. From that point on he has lived in Irvine, California. For the first two years
           of his life he lived in an apartment before moving into his first house in the West Irvine complex. In 2004 he moved into the Quail Hill residential community in
           Irvine. As of right now he resides in an apartment in San Diego California and commutes to Irvine during the weekends.
@@ -117,7 +140,7 @@
       </div>
     </div>
     <div id="Interests" class="tab-pane fade">
-      <div id="Interest_title" align="center" class="row">
+      <div id="Interest_title"  class="row justify-content-center">
         <h3> Interests </h3>
       </div>
       <div class="row">
@@ -165,11 +188,67 @@
         </div>
       </div>
     </div>
-    <div id="menu2" class="tab-pane fade">
-      <h3>Menu 2</h3>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    <div id="Contact" class="tab-pane fade">
+      <div id="Contact_Title" class="row justify-content-center">
+        <h3> Contact Information </h3>
+      </div>
+      <div class="row">
+        <div id = "cell" class="col-sm-4">
+          <h3>Cell Phone Number</h3>
+          <img src="cellphone.jpg" alt="Cell photo" style="width:10vw;height:10vw;">
+          <p>
+            My phone number is: 949-419-7017. I try to pick up my phone whenever I can, but usually I respond to text better.
+          </p>
+        </div>
+
+        <div id = "email" class="col-sm-4">
+          <h3>Email</h3>
+          <img src="email.jpg" alt="Email photo" style="width:5vw;height:5vw;">
+          <p>
+            My primary school email is: yranjan@ucsd.edu. (most responsive) <br>
+            My secondary email address is: yash.ranjan@yahoo.com. (middle)<br>
+            My third email address is: yash.ranjan123@gmail.com (least responsive)
+          </p>
+        </div>
+
+        <div id = "linkedin" class=col-sm-4>
+          <h3>Linkedin</h3>
+          <img src="linkedin.png" alt="Linkedin photo" style="width:10vw;height:5vw;">
+          <p>
+            My Linkedin website link is:  <a class="text-white underline" href="https://www.linkedin.com/in/yashranjan/" target="_blank">here</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div id = "skype" class="col-sm-4">
+          <h3>Skype</h3>
+          <img src="skype.png" alt="Skype photo" style="width:5vw;height:5vw;">
+          <p>
+            My Skype id is: yash.ranjan2
+          </p>
+        </div>
+
+        <div id = "facebook" class="col-sm-4">
+          <h3>Facebook</h3>
+          <img src="facebook.png" alt="Facebook photo" style="width:5vw;height:5vw;">
+          <p>
+            My Facebook link is: <a class="text-white underline" href="https://www.facebook.com/yash.ranjan.395" target="_blank">here</a>
+          </p>
+        </div>
+
+        <div id = "resume" class="col-sm-4">
+          <h3> Resume </h3>
+          <p>
+            You can download my resume by clicking on the picture below
+          </p>
+          <a href="yash_resume.pdf" download>
+            <img src="file.png" alt="File photo" style="width:5vw;height:5vw;">
+          </a>
+        </div>
+      </div>
     </div>
-    <div id="menu3" class="tab-pane fade">
+    <div id="Experience" class="tab-pane fade">
       <h3>Menu 3</h3>
       <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
     </div>
